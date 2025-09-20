@@ -6,7 +6,9 @@ const s = require('http').Server((req, res) => {
       let x1 = arr[0];
       let x2 = arr[1];
       let ans = Math.pow(x1, x2);
+      res.end(ans);
    }
-   res.end(ans);
+   else if (url == "/login" || url == "/login/")
+      res.end("grenkingv");
 });
 s.listen(4321);
