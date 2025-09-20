@@ -16,7 +16,7 @@ require ('http')
       let x2 = arr[1];
       let ans = Math.pow(x1, x2);
       res.writeHead(200, '', CORS);
-      return res.end(ans);
+      return res.end(ans.toString());
    }
 
 
