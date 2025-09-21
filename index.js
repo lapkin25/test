@@ -25,6 +25,11 @@ require ('http')
     return res.end(process.env.login);
   }  
 
+    
+res.writeHead(200, '', CORS);
+return res.end("");
+
+
  
 })
 .listen(process.env.PORT);
