@@ -20,14 +20,13 @@ require ('http')
    }
 
 
-  if (req.url === '/login/') {
+  else {   // (req.url === '/login/') {
     res.writeHead(200, '', CORS);
     return res.end(process.env.login);
   }  
 
     
-res.writeHead(200, '', CORS);
-return res.end("");
+
 
 
  
